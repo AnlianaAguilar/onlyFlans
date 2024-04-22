@@ -29,6 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True if os.environ.get('DEBUG')=='True' else False
 
+
 ALLOWED_HOSTS = ["127.0.0.1"]
 
 
@@ -55,6 +56,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'onlyflans.urls'
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'login'
 
 TEMPLATES = [
     {

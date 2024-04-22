@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block 'contenido' %}
+  <div class="container text-center">
+    <h1>¡Error 404 - Página de flan desaparecida!</h1>
+    <p>¡Oh no! Parece que la página que buscas ha sido devorada por un monstruo glotón de flan.</p>
+    <p>Tranquilo, no es la primera vez que esto pasa. ¡Vuelve a <a href="/">OnlyFlans</a> y ayúdanos a encontrar la página perdida entre montañas de flan!</p>
+  </div>
+
+  <div class="text-center mt-2">
+    <a href="{% url 'index' %}" class="btn btn-outline-secondary">Volver a Home</a>
+  </div>
+  
+{% endblock 'contenido' %}
